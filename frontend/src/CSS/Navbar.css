@@ -1,0 +1,116 @@
+.navbar {
+    /* background: linear-gradient(135deg, #FFA500, #FFFF00);
+     */
+     background-color: #FFA161;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+  }
+  
+  .navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+
+  }
+  
+  .navbar-logo img {
+    height: 90px;
+    width: 80px;
+    
+  }
+  
+  .navbar-links {
+    display: flex;
+    align-items: center;
+    gap:30px;
+
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    padding: 10px;
+    color:rgb(58, 56, 56);
+    gap: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    transition: color 0.3s;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  .nav-link.active {
+    border-bottom: 2px solid white;
+  }
+  
+  .mobile-menu-icon {
+    display: none; /* Hide by default on larger screen */
+    cursor: pointer;
+  }
+  
+  .menu-drawer {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .menu-drawer a, .menu-drawer button {
+    margin-bottom: 10px;
+  }
+  
+  .menu-drawer.open {
+    display: flex;
+  }
+  
+  @media (max-width: 767px) {
+    .navbar-links {
+      display: none; /* Hide on smaller screens */
+    }
+  
+    .mobile-menu-icon {
+      display: block; /* Show on smaller screens */
+      font-size: 1.5rem;
+    }
+  
+    .menu-drawer {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      justify-content: flex-start;
+      z-index: 1000;
+      align-items: flex-start;
+      padding: 50px 20px;
+      background: #FFA161;
+      flex-direction: column;
+      transform: translateX(-100%);
+      transition: transform 0.3s ease-in-out;
+    }
+  
+    .menu-drawer a, .menu-drawer button {
+      font-size: 1.2rem;
+      color: white;
+      text-decoration: none;
+    }
+  
+    .menu-drawer.open {
+      transform: translateX(0);
+    }
+    .menu-sumit{
+    display: hidden;
+    background-color: red;
+    }
+  }
+  .logout{
+    color:white;
+    font-size: 18px;
+  }
+
+  
+  
